@@ -8,51 +8,59 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
 
 body {
     font-family: 'Inter', sans-serif;
-    background: #0f172a;
+    background-color: #0f172a;
     color: #e2e8f0;
-    scroll-behavior: smooth;
 }
 
 nav {
     position: fixed;
     width: 100%;
     top: 0;
-    background: rgba(15, 23, 42, 0.9);
-    backdrop-filter: blur(10px);
-    padding: 15px 50px;
+    background-color: #0f172a;
+    padding: 20px 60px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #1e293b;
     z-index: 1000;
 }
 
+nav .logo {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
 nav a {
-    color: #e2e8f0;
     text-decoration: none;
-    margin-left: 20px;
+    color: #94a3b8;
     font-weight: 500;
+    transition: 0.3s;
 }
 
-nav a:hover {
-    color: #38bdf8;
-}
+nav a:hover { color: #38bdf8; }
 
-section {
-    padding: 120px 20px;
+.section {
+    padding: 140px 60px 80px 60px;
     max-width: 1000px;
     margin: auto;
 }
 
 .hero {
-    text-align: center;
-    padding-top: 180px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .hero h1 {
@@ -61,150 +69,23 @@ section {
 }
 
 .hero p {
-    margin-top: 15px;
+    margin-top: 20px;
     font-size: 20px;
     color: #94a3b8;
 }
 
-.highlight {
-    color: #38bdf8;
+.highlight { color: #38bdf8; }
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
 }
 
 .card {
-    background: #1e293b;
-    padding: 25px;
+    background-color: #1e293b;
+    padding: 30px;
     border-radius: 12px;
-    margin-top: 20px;
-    transition: transform 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-h2 {
     margin-bottom: 20px;
-    font-size: 28px;
-    border-left: 4px solid #38bdf8;
-    padding-left: 10px;
 }
 
 ul {
-    padding-left: 20px;
-}
-
-li {
-    margin-bottom: 12px;
-}
-
-.footer {
-    text-align: center;
-    padding: 40px;
-    color: #64748b;
-}
-
-.fade-in {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.8s ease;
-}
-
-.fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-</style>
-</head>
-
-<body>
-
-<nav>
-    <div><strong>Rakhee Mahajan</strong></div>
-    <div>
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-    </div>
-</nav>
-
-<section class="hero">
-    <h1>Senior Backend Engineer</h1>
-    <p>Scalable Distributed Systems | <span class="highlight">Java & SQL</span> | Secure Architecture</p>
-</section>
-
-<section id="about" class="fade-in">
-    <h2>About Me</h2>
-    <div class="card">
-        <p>
-            Senior Backend Engineer with 4+ years of experience building scalable, distributed enterprise systems.
-            Expert in <span class="highlight">Java and SQL</span>, specializing in microservices architecture,
-            secure authentication systems, and high-performance backend design.
-        </p>
-        <br>
-        <p>
-            I take strong ownership of the systems I work on and proactively drive solutions from design to delivery with accountability and reliability.
-            I thrive on solving complex problems and bring curiosity, initiative, and a high level of ownership to everything I build.
-        </p>
-    </div>
-</section>
-
-<section id="experience" class="fade-in">
-    <h2>Experience</h2>
-    <div class="card">
-        <h3>Senior Software Specialist — PTC (Jul 2021 – Present)</h3>
-        <ul>
-            <li>Designed and implemented DMZ-based reverse proxy architecture with SP-initiated SAML 2.0 SSO (PingFederate).</li>
-            <li>Architected backend systems achieving <span class="highlight">10x performance improvement</span>.</li>
-            <li>Built enterprise REST services using OData.</li>
-            <li>Worked on SSE, WebSockets, Pub-Sub systems & Load Balancers.</li>
-            <li>Applied CI/CD (Jenkins) and TDD practices.</li>
-        </ul>
-    </div>
-</section>
-
-<section id="skills" class="fade-in">
-    <h2>Technical Skills</h2>
-    <div class="card">
-        <p><strong>Languages:</strong> Java, SQL</p>
-        <p><strong>Backend:</strong> Spring Boot, REST APIs, Microservices</p>
-        <p><strong>Security:</strong> SAML 2.0, Reverse Proxy Architecture</p>
-        <p><strong>DevOps:</strong> Jenkins, Git</p>
-        <p><strong>Domain:</strong> Windchill, CAD Systems</p>
-    </div>
-</section>
-
-<section id="contact" class="fade-in">
-    <h2>Contact</h2>
-    <div class="card">
-        <p>Email: rakhi.mahajann@gmail.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/rakhee-mahajan-b16a65171/" target="_blank">View Profile</a></p>
-    </div>
-</section>
-
-<div class="footer">
-    © 2026 Rakhee Mahajan
-</div>
-
-<script>
-const faders = document.querySelectorAll('.fade-in');
-
-const appearOptions = {
-    threshold: 0.2
-};
-
-const appearOnScroll = new IntersectionObserver(function(entries, observer) {
-    entries.forEach(entry => {
-        if (!entry.isIntersecting) {
-            return;
-        } else {
-            entry.target.classList.add('visible');
-            observer.unobserve(entry.target);
-        }
-    });
-}, appearOptions);
-
-faders.forEach(fader => {
-    appearOnScroll.observe(fader);
-});
-</s

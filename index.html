@@ -4,118 +4,207 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Rakhee Mahajan | Senior Backend Engineer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <style>
-body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-color: #0f172a;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #0f172a;
     color: #e2e8f0;
-    line-height: 1.6;
+    scroll-behavior: smooth;
 }
-.container {
-    max-width: 900px;
-    margin: auto;
-    padding: 40px 20px;
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: rgba(15, 23, 42, 0.9);
+    backdrop-filter: blur(10px);
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
 }
-h1 {
-    font-size: 42px;
-    margin-bottom: 5px;
-}
-h2 {
-    margin-top: 40px;
-    border-bottom: 1px solid #334155;
-    padding-bottom: 10px;
-}
-a {
-    color: #38bdf8;
+
+nav a {
+    color: #e2e8f0;
     text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
 }
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+section {
+    padding: 120px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.hero {
+    text-align: center;
+    padding-top: 180px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    font-weight: 700;
+}
+
+.hero p {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #94a3b8;
+}
+
 .highlight {
     color: #38bdf8;
 }
+
 .card {
     background: #1e293b;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 25px;
+    border-radius: 12px;
     margin-top: 20px;
+    transition: transform 0.3s ease;
 }
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    border-left: 4px solid #38bdf8;
+    padding-left: 10px;
+}
+
 ul {
     padding-left: 20px;
 }
+
 li {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
-.header-sub {
-    color: #94a3b8;
-    margin-bottom: 20px;
+
+.footer {
+    text-align: center;
+    padding: 40px;
+    color: #64748b;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 </style>
 </head>
+
 <body>
 
-<div class="container">
+<nav>
+    <div><strong>Rakhee Mahajan</strong></div>
+    <div>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
 
-<h1>Rakhee Mahajan</h1>
-<div class="header-sub">
-Senior Backend Engineer | Scalable Distributed Systems | Java & SQL
+<section class="hero">
+    <h1>Senior Backend Engineer</h1>
+    <p>Scalable Distributed Systems | <span class="highlight">Java & SQL</span> | Secure Architecture</p>
+</section>
+
+<section id="about" class="fade-in">
+    <h2>About Me</h2>
+    <div class="card">
+        <p>
+            Senior Backend Engineer with 4+ years of experience building scalable, distributed enterprise systems.
+            Expert in <span class="highlight">Java and SQL</span>, specializing in microservices architecture,
+            secure authentication systems, and high-performance backend design.
+        </p>
+        <br>
+        <p>
+            I take strong ownership of the systems I work on and proactively drive solutions from design to delivery with accountability and reliability.
+            I thrive on solving complex problems and bring curiosity, initiative, and a high level of ownership to everything I build.
+        </p>
+    </div>
+</section>
+
+<section id="experience" class="fade-in">
+    <h2>Experience</h2>
+    <div class="card">
+        <h3>Senior Software Specialist — PTC (Jul 2021 – Present)</h3>
+        <ul>
+            <li>Designed and implemented DMZ-based reverse proxy architecture with SP-initiated SAML 2.0 SSO (PingFederate).</li>
+            <li>Architected backend systems achieving <span class="highlight">10x performance improvement</span>.</li>
+            <li>Built enterprise REST services using OData.</li>
+            <li>Worked on SSE, WebSockets, Pub-Sub systems & Load Balancers.</li>
+            <li>Applied CI/CD (Jenkins) and TDD practices.</li>
+        </ul>
+    </div>
+</section>
+
+<section id="skills" class="fade-in">
+    <h2>Technical Skills</h2>
+    <div class="card">
+        <p><strong>Languages:</strong> Java, SQL</p>
+        <p><strong>Backend:</strong> Spring Boot, REST APIs, Microservices</p>
+        <p><strong>Security:</strong> SAML 2.0, Reverse Proxy Architecture</p>
+        <p><strong>DevOps:</strong> Jenkins, Git</p>
+        <p><strong>Domain:</strong> Windchill, CAD Systems</p>
+    </div>
+</section>
+
+<section id="contact" class="fade-in">
+    <h2>Contact</h2>
+    <div class="card">
+        <p>Email: rakhi.mahajann@gmail.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/rakhee-mahajan-b16a65171/" target="_blank">View Profile</a></p>
+    </div>
+</section>
+
+<div class="footer">
+    © 2026 Rakhee Mahajan
 </div>
 
-<p>
-📍 Pune, India <br>
-📧 rakhi.mahajann@gmail.com <br>
-🔗 <a href="https://www.linkedin.com/in/rakhee-mahajan-b16a65171/" target="_blank">LinkedIn</a>
-</p>
+<script>
+const faders = document.querySelectorAll('.fade-in');
 
-<h2>About Me</h2>
-<p>
-Senior Backend Engineer with 4+ years of experience building scalable, distributed enterprise systems.
-Expert in <span class="highlight">Java and SQL</span>, specializing in microservices architecture,
-secure authentication systems, and high-performance backend design.
-</p>
-<p>
-I take strong ownership of the systems I work on and proactively drive solutions from design to delivery with accountability and reliability.
-I thrive on solving complex problems and bring curiosity, initiative, and a high level of ownership to everything I build.
-</p>
+const appearOptions = {
+    threshold: 0.2
+};
 
-<h2>Experience</h2>
-<div class="card">
-<h3>Senior Software Specialist — PTC (Jul 2021 – Present)</h3>
-<ul>
-<li>Designed and implemented a DMZ-based reverse proxy architecture with SP-initiated SAML 2.0 SSO (PingFederate), eliminating direct exposure of internal systems.</li>
-<li>Architected scalable backend systems in Windchill, achieving a <span class="highlight">10x performance improvement</span> for large-scale data processing.</li>
-<li>Designed and optimized enterprise REST services using OData.</li>
-<li>Contributed to distributed system design involving SSE, WebSockets, Pub-Sub systems, and Load Balancers.</li>
-<li>Applied CI/CD (Jenkins) and Test-Driven Development (TDD).</li>
-</ul>
-</div>
+const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+            return;
+        } else {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+        }
+    });
+}, appearOptions);
 
-<h2>Technical Skills</h2>
-<div class="card">
-<p><strong>Languages:</strong> Java, SQL</p>
-<p><strong>Backend:</strong> Spring Boot, REST APIs, Microservices, Distributed Systems</p>
-<p><strong>Security:</strong> SAML 2.0, Reverse Proxy Architecture</p>
-<p><strong>DevOps:</strong> Jenkins, Git</p>
-<p><strong>Domain:</strong> Windchill, CAD Data Systems</p>
-</div>
-
-<h2>Project</h2>
-<div class="card">
-<h3>Windchill Customization Classifier</h3>
-<ul>
-<li>Built clustering system using AST analysis.</li>
-<li>Applied ML techniques for pattern grouping.</li>
-<li>Recognized with Innovation Breakthrough Award.</li>
-</ul>
-</div>
-
-<h2>Education</h2>
-<div class="card">
-<p>BE in Computer Science — CGPA 8.84</p>
-<p>Sinhgad Institute of Technology and Science</p>
-</div>
-
-</div>
-
-</body>
-</html>
+faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+});
+</s

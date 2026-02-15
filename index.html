@@ -1,184 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rakhee Mahajan | Senior Backend Engineer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rakhee Mahajan | Senior Backend Engineer</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700&display=swap"
+        rel="stylesheet">
 
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-body {
-    font-family: 'Inter', sans-serif;
-    background-color: #0f172a;
-    color: #e2e8f0;
-}
-
-nav {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    background-color: #0f172a;
-    padding: 20px 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #1e293b;
-    z-index: 1000;
-}
-
-nav .logo {
-    font-weight: 600;
-    font-size: 18px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #94a3b8;
-    font-weight: 500;
-    transition: 0.3s;
-}
-
-nav a:hover { color: #38bdf8; }
-
-.section {
-    padding: 140px 60px 80px 60px;
-    max-width: 1000px;
-    margin: auto;
-}
-
-.hero {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.hero h1 {
-    font-size: 52px;
-    font-weight: 700;
-}
-
-.hero p {
-    margin-top: 20px;
-    font-size: 20px;
-    color: #94a3b8;
-}
-
-.highlight { color: #38bdf8; }
-
-h2 {
-    font-size: 28px;
-    margin-bottom: 30px;
-}
-
-.card {
-    background-color: #1e293b;
-    padding: 30px;
-    border-radius: 12px;
-    margin-bottom: 20px;
-}
-
-ul { padding-left: 20px; }
-li { margin-bottom: 12px; }
-
-.footer {
-    text-align: center;
-    padding: 40px;
-    border-top: 1px solid #1e293b;
-    color: #64748b;
-    margin-top: 60px;
-}
-</style>
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-<nav>
-    <div class="logo">Rakhee Mahajan</div>
-    <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
-
-<section class="section hero">
-    <h1>Senior Backend Engineer</h1>
-    <p>
-        Scalable Distributed Systems |
-        <span class="highlight">Java & SQL</span> |
-        Secure Architecture
-    </p>
-</section>
-
-<section id="about" class="section">
-    <h2>About Me</h2>
-    <div class="card">
-        <p>
-            Senior Backend Engineer with 4+ years of experience building scalable, distributed enterprise systems.
-            Expert in <span class="highlight">Java and SQL</span>, specializing in microservices architecture,
-            secure authentication systems, and high-performance backend design.
-        </p>
-        <br>
-        <p>
-            I take strong ownership of the systems I work on and proactively drive solutions from design to delivery with accountability and reliability.
-            I thrive on solving complex problems and bring curiosity, initiative, and a high level of ownership to everything I build.
-        </p>
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
     </div>
-</section>
 
-<section id="experience" class="section">
-    <h2>Experience</h2>
-    <div class="card">
-        <h3>Senior Software Specialist — PTC (Jul 2021 – Present)</h3>
-        <ul>
-            <li>Designed and implemented DMZ-based reverse proxy architecture with SP-initiated SAML 2.0 SSO (PingFederate).</li>
-            <li>Architected scalable backend systems achieving <span class="highlight">10x performance improvement</span>.</li>
-            <li>Designed enterprise REST services using OData.</li>
-            <li>Worked on SSE, WebSockets, Pub-Sub systems and Load Balancers.</li>
-            <li>Applied CI/CD (Jenkins) and Test-Driven Development (TDD).</li>
+    <nav>
+        <div class="logo">RM</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-    </div>
-</section>
+    </nav>
 
-<section id="skills" class="section">
-    <h2>Technical Skills</h2>
-    <div class="card">
-        <p><strong>Languages:</strong> Java, SQL</p>
-        <p><strong>Backend:</strong> Spring Boot, REST APIs, Microservices</p>
-        <p><strong>Security:</strong> SAML 2.0, Reverse Proxy Architecture</p>
-        <p><strong>DevOps:</strong> Jenkins, Git</p>
-        <p><strong>Domain:</strong> Windchill, CAD Data Systems</p>
-    </div>
-</section>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <span class="hero-tag">Senior Backend Engineer</span>
+            <h1>
+                <span class="name">Rakhee Mahajan</span>
+                Building Scalable Systems.
+            </h1>
+            <p>
+                Specializing in <span class="highlight">Distributed Systems</span>,
+                <span class="highlight">Secure Architecture</span>, and
+                high-performance backend engineering with 4+ years of expertise.
+            </p>
+        </section>
 
-<section id="contact" class="section">
-    <h2>Contact</h2>
-    <div class="card">
-        <p>Email: rakhi.mahajann@gmail.com</p>
-        <p>
-            LinkedIn:
-            <a href="https://www.linkedin.com/in/rakhee-mahajan-b16a65171/" target="_blank">
-                View Profile
-            </a>
-        </p>
-    </div>
-</section>
+        <!-- About Section -->
+        <section id="about" class="reveal">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="card about-main">
+                    <p>
+                        I am a Senior Backend Engineer with over 4 years of experience in crafting robust, distributed
+                        enterprise solutions.
+                        My expertise lies in <span class="highlight">Java and SQL</span>, with a deep focus on
+                        microservices architecture,
+                        SAML-based authentication, and performance optimization.
+                    </p>
+                    <br>
+                    <p>
+                        Beyond the code, I am a builder at heart. I believe that great software isn't just about
+                        syntax—it's about the <strong>responsibility</strong> you take for the systems you create.
+                    </p>
+                </div>
 
-<div class="footer">
-    © 2026 Rakhee Mahajan
-</div>
+                <div class="values-grid">
+                    <div class="card value-card">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <h3>Extreme Ownership</h3>
+                        <p>I don't just write features; I own the lifecycle. From architectural design to
+                            post-production stability, I take full accountability for every system I touch.</p>
+                    </div>
+                    <div class="card value-card">
+                        <i class="fa-solid fa-fire"></i>
+                        <h3>Relentless Commitment</h3>
+                        <p>I am driven by the impact of my work. My commitment is to build not just what works, but what
+                            lasts—scaling systems to meet tomorrow's demands today.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- Experience Section -->
+        <section id="experience" class="reveal">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-grid">
+                <div class="card">
+                    <div class="exp-header">
+                        <div>
+                            <h3>Senior Software Specialist</h3>
+                            <span class="exp-company">PTC Inc.</span>
+                        </div>
+                        <span class="exp-date">Jul 2021 — Present</span>
+                    </div>
+                    <ul class="exp-list">
+                        <li>Designed and implemented <span class="highlight">DMZ-based reverse proxy architecture</span>
+                            with SP-initiated SAML 2.0 SSO using PingFederate.</li>
+                        <li>Architected scalable backend systems that achieved a <span class="highlight">10x performance
+                                improvement</span> for core enterprise services.</li>
+                        <li>Developed enterprise-grade REST services utilizing <span class="highlight">OData
+                                protocols</span> for complex data interaction.</li>
+                        <li>Implemented real-time communication systems using SSE, WebSockets, and Pub-Sub patterns.
+                        </li>
+                        <li>Championship-driven delivery using CI/CD (Jenkins) and strict Test-Driven Development (TDD)
+                            practices.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="reveal">
+            <h2 class="section-title">Technical Expertise</h2>
+            <div class="skills-container">
+                <div class="card skill-category">
+                    <h4>Languages & Backend</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Spring Boot</span>
+                        <span class="skill-tag">Microservices</span>
+                        <span class="skill-tag">REST APIs</span>
+                    </div>
+                </div>
+                <div class="card skill-category">
+                    <h4>Security & Infrastructure</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">SAML 2.0</span>
+                        <span class="skill-tag">PingFederate</span>
+                        <span class="skill-tag">Reverse Proxy</span>
+                        <span class="skill-tag">Load Balancers</span>
+                    </div>
+                </div>
+                <div class="card skill-category">
+                    <h4>DevOps & Tools</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Jenkins</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">TDD</span>
+                        <span class="skill-tag">Windchill</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="reveal">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <p>
+                        I'm always open to discussing new opportunities, architecture patterns, or backend challenges.
+                    </p>
+                </div>
+                <div class="contact-links">
+                    <a href="mailto:rakhi.mahajann@gmail.com" class="contact-button">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>rakhi.mahajann@gmail.com</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/rakhee-mahajan-b16a65171/" target="_blank"
+                        class="contact-button">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <span>LinkedIn Profile</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Rakhee Mahajan. Crafted with precision.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
